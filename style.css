@@ -75,14 +75,25 @@ img {
 
 /* MEDIA */
 
-/* COME FUNZIONA - INIZIA A STUDIARE */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
-@media screen and (max-width: 420px) {
-  .left, .right {
-    width: 50%; 
+@media all and (max-width: 420px) {
+  .row {
+    width: 100%;
   }
-  .right {
+  #lezioni .row>.left, #lezioni .row>.right {
     float: none;
-    width: auto;
+    width: 100%;
+  }
+
+  #steps .row>.right,
+  #steps .row>.left,
+  #steps .row>.central {
+    float: none;
+    width: 100%;
   }
 }
